@@ -1,0 +1,237 @@
+
+#stack=[]
+#def Push():
+   # elements=input("enter the elements to the stack:")
+  #  stack.append(elements)
+  #  print(stack)
+#def Pop():
+ #   if not stack:
+  #      print("stack is empty")
+  #  else:
+  #      x=stack.pop()
+   #     print("remove elements:",x)
+   #     print(stack)
+#while True:
+ #   print("select the operation 1.push 2.pop 3.quit:")
+  #  choice=int(input())
+   # if choice==1:
+   #     Push()
+   # elif choice==2:
+   #     Pop()
+   # elif choice==3:
+   #     break
+ #   else:
+    #    print("enter the correct operation")
+
+
+# stack using list in python
+#s=[]
+#s.append(1)
+#s.append(2)
+#s.append(3)
+#s.append(4)
+#s.append(5)
+#print(s)
+#s.pop()
+#s.pop()
+#s.pop()
+#print(s)
+
+
+#s.Push(val)
+#s.Push(3)
+#s.Push(4)
+#s.Push(5)
+
+
+#from collections import deque
+#stack=deque()
+
+#class Stack:
+  #  def __init__(self):
+   #     self.container=deque()
+   # def Push(self,val):
+   #    # print(int(input("enter ",val,"into the stack")))
+    #    self.container.append(val)
+   # def Pop(self):
+   #     return self.container.pop()
+   # def is_empty(self):
+   #     return len(self.container)==0
+   # def Peak(self):
+    #    return self.container[-1]
+  #  def Size(self):
+    #    return len(self.container)
+#s=Stack
+
+#class Stack:
+    #def __init__(self):
+     #   self.container = deque()
+
+   # def push(self, val):
+    #    self.container.append(val)
+
+ #   def pop(self):
+   #     return self.container.pop()
+
+  #  def peek(self):
+  #      return self.container[-1]
+
+  #  def is_empty(self):
+  #      return len(self.container) == 0
+
+  #  def size(self):
+  #      return len(self.container)
+
+
+#s = Stack()
+#s.push(5)
+#s.push(3)
+
+
+#class Stack:
+   # def __init__(self):
+   #     self.container = deque()
+
+
+   # def push(self, val):
+   #     self.container.append(val)
+
+
+  #  def pop(self):
+
+
+     #   return self.container.pop()
+
+
+ #   def peek(self):
+   #     return self.container[-1]
+
+ #   def is_empty(self):
+    #    return len(self.container) == 0
+
+  #  def size(self):
+ #       return len(self.container)
+
+
+#s= Stack()
+
+#print("the value inter into the stack")
+#s.push(3)
+#s.push(5)
+#s.push(7)
+#s.push(8)
+#print(s.container)
+#print("the value pop from the stack")
+
+#print(s.pop())
+#print(s.pop())
+#print(s.pop())
+#print(s.pop())
+#print(s.is_empty())
+#print(s.push(34))
+#print(s.push(45))
+#print(s.push(56))
+#print(s.container)
+#s.size()
+#print(s.size())
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<
+# EXE
+from collections import deque
+stack=deque()
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+
+
+class Stack_to_reverse:
+    # Creates  an  empty  stack.
+    def __init__(self):
+        self.items = list()
+        self.size = -1
+
+    # Returns  True  if  the  stack  is  empty  or  False  otherwise.
+    def isEmpty(self):
+        if (self.size == -1):
+            return True
+        else:
+            return False
+
+    # Removes  and  returns  the  top  item  on  the  stack.
+    def pop(self):
+        if self.isEmpty():
+            print("Stack is empty")
+        else:
+            return self.items.pop()
+            self.size -= 1
+
+    # Push  an  item  onto  the  top  of  the  stack.
+    def push(self, item):
+        self.items.append(item)
+        self.size += 1
+
+    def reverse(self, string):
+        n = len(string)
+
+        # Push all characters of string to stack
+        for i in range(0, n):
+            S.push(string[i])
+
+        # Making the string empty since all characters are saved in stack
+        string = ""
+
+        # Pop all characters of string and put them back to string
+
+        for i in range(0, n):
+            string += S.pop()
+        return string
+
+
+S = Stack_to_reverse()
+seq = input("Enter a string to be reversed:")
+sequence = S.reverse(seq)
+print("Reversed string is:" + sequence)
